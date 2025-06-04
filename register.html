@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register - PermaWear</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">PermaWear</div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li>
+              <a href="#">Categories</a>
+              <ul>
+                <li><a href="clothing.html">Clothing</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+              </ul>
+            </li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h1 class="section-title">Customer Registration: </h1>
+      <form id="registerForm" autocomplete="off">
+        <div>
+          <label for="name">Name: </label>
+          <input type="text" name="name" id="name" required>
+          <div class="error error-name"></div>
+        </div>
+        <div>
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" required>
+          <div class="error error-email"></div>
+        </div>
+        <div>
+          <label for="password">Password: </label>
+          <input type="password" name="password" id="password" required>
+          <div class="error error-password"></div>
+        </div>
+        <div>
+          <label for="age">Age: </label>
+          <input type="number" name="age" id="age" min="13" max="120" required>
+          <div class="error error-age"></div>
+        </div>
+        <div>
+          <label for="gender">Gender: </label>
+          <select name="gender" id="gender" required>
+            <option value="">Select</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Non-Binary</option>
+          </select>
+          <div class="error error-gender"></div>
+        </div>
+        <button type="submit">Register</button>
+        <div class="success"></div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
